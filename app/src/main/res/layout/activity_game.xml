@@ -26,8 +26,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_gravity="center"
-                android:gravity="center"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <TextView
@@ -79,10 +79,15 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="9"></LinearLayout>
+            android:layout_weight="9">
+
+        <com.example.tetrisnoactivity.view.TetrisView
+            android:id="@+id/view_tetris"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        </LinearLayout>
 
     </LinearLayout>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
